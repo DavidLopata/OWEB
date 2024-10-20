@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+ <html>
+  <head>
+   <meta charset = "utf-8">
+   <title>
+    Forms
+   </title>
+  </head>
+
+  <body>
+   <center>
+    <hr>
+ <form method = "post" action = "https://www.pizzajakomo.com/">
+
+    <h1><strong>Order pizza!</strong></h1>
+  <label>
+    <strong>Select the pizza size:</strong><br>
+  <input name = "pizzasize" type = "radio"
+       value = "Big" checked>Big</label><br>
+ <label>
+    <input name = "pizzasize" type = "radio" 
+       value = "Medium"></label>Medium<br>
+ <label>
+    <input name = "pizzasize" type = "radio" 
+       value = "Small">Small</label><br>
+
+<p>
+    <label for = "txtList"><strong>Select the crust type:</strong><br>
+  <input type = "text" id = "txtList" size="10"
+       placeholder = "Crust type" list = "crusts" />
+    <datalist id = "crusts">
+       <option value = "Deep Dish">
+       <option value = "Flatbread">
+       <option value = "Gluten-Free">
+       <option value = "Neapolitan">
+       <option value = "Sicilian"> 
+       <option value = "Stuffed">
+       <option value = "Thin">
+    </datalist>
+ </label>
+</p>
+ <p>
+  <strong>Select the filler:</strong><br>
+  <label>
+     <input name = "filler" type = "checkbox" 
+        value = "Sausages">Sausages</label><br>
+  <label>
+     <input name = "filler" type = "checkbox" 
+        value = "Pepper">Pepper</label><br>
+  <label>
+     <input name = "filler" type = "checkbox" 
+        value = "Mushrooms">Mushrooms</label><br>
+</p>
+<p>
+ <label>
+  <strong>Name:</strong>
+   <input name = "name" type = "text" size = "15"><br>
+  <strong>Phone:</strong>
+   <input name = "phone" type = "text" size = "15"><br>
+  <textarea name = "messages"
+    rows = "4" cols = "36">Message:</textarea>
+ </label>
+</p>
+<p>
+  <input type = "submit" value = "Send">
+  <input type = "reset" value = "Reset">
+</p>   
+</center>
+</body>
+ </html>
