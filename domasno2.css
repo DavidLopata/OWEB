@@ -1,0 +1,55 @@
+body{ 
+    background-image: url(pizza.jpg);
+    background-position: center; 
+    background-repeat: repeat;
+    background-size: 100% ;
+    background-repeat: repeat;
+}
+h1
+{
+  margin-top: 100px;
+  color: rgb(233, 5, 5);
+  border: 10px solid rgb(159, 5, 5);
+  border-radius: 1000px;
+  border-style:outset;
+  padding: 5px 20px;
+  width:  500px;
+  height: 500px;
+  background-color: rgb(244, 210, 18);
+  float: center;
+  margin-bottom: 20px; 
+  font-style: italic;
+
+
+}
+p 
+{ 
+  font-style: normal;
+  font-size: medium;
+  color: green;
+}
+input 
+{
+   accent-color: red ;
+   font-style: normal ;
+   background-color: rgb(244, 210, 18);
+   border-color: red;
+   border-radius: 5px;
+   border-style: groove;
+}
+textarea
+{
+margin-top: 5px; 
+background-color:rgb(244, 210, 18);
+border: red;
+border-style: double;
+resize: none;
+
+}
+label
+{
+    font-style: italic ;
+    font-size: large ;
+    -webkit-text-stroke: .5px black ;
+
+}
