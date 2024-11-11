@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Shop Login</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; 
+            margin: 0; 
+            padding: 0;
+        }
+        form {
+            border: 3px solid #f1f1f1; 
+            width: 50%; 
+            margin: 2% auto; 
+            padding: 16px;}
+        
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        header h1, footer p {
+            margin: 0;
+            text-align: left;
+        }
+
+        h2 {text-align: center;}
+
+        button {
+            background-color:  #333;;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+
+<h2>Log in</h2>
+
+<form id="loginForm">
+    <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" id="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" id="psw" required>
+
+        <button type="submit">Login</button>
+    </div>
+</form>
+
+
+<script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        const username = document.getElementById("uname").value;
+        const password = document.getElementById("psw").value;
+
+        if (username === "David" && password === "2110") {  // Example credentials
+            sessionStorage.setItem("loggedIn", "true");
+            window.location.href = "proekt1.html";  // Redirect to main page
+        } else {
+            alert("Invalid credentials. Please try again.");
+        }
+    });
+</script>
+
+</body>
+</html>

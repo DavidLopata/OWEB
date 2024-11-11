@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Shop</title>
+    <link rel="stylesheet" href="proekt1.css">
+</head>
+<body>
+<div class="full-screen-container">
+    </div>
+
+    <header>
+    <a href="proekt1.html"><img src="logo.png" alt="Car Shop Logo" class="logo"></a>
+    <nav>
+        <a href="#survey" onclick="openSurvey()">Feedback</a>
+    </nav>
+</header>
+
+<main id="home">
+    <div class="main-box" id="new-cars-box" onclick="toggleSection('new-cars')">
+        <h2>New Cars</h2>
+        <p>Explore the latest models with advanced technology.</p>
+    </div>
+    <div class="main-box" id="used-cars-box" onclick="toggleSection('used-cars')">
+        <h2>Used Cars</h2>
+        <p>Check out our certified, pre-owned collection.</p>
+    </div>
+</main>
+
+<!-- New Cars Section -->
+<section id="new-cars" class="hidden-section">
+    <h1>New Car Models</h1>
+    <div class="model-grid">
+        <div class="model-box">
+            <a href="new-audi.html"><img src="audi_logo.jpg" alt="Audi" title="Audi"></a>
+        </div>
+        <div class="model-box">
+            <a href="new-bmw.html"><img src="bmw_logo.jpg" alt="BMW" title="BMW"></a>
+        </div>
+        <div class="model-box">
+            <a href="new-mercedes.html"><img src="benz_logo.jpg" alt="Mercedes" title="Mercedes"></a>
+        </div>
+        <div class="model-box">
+            <a href="new-toyota.html"><img src="toyota_logo.jpg" alt="Toyota" title="Toyota"></a>
+        </div>
+        <div class="model-box">
+            <a href="new-skoda.html"><img src="skoda_logo.jpg" alt="Skoda" title="Skoda"></a>
+        </div>
+        <div class="model-box">
+            <a href="new-alfa-romeo.html"><img src="alfa_romeo_logo.jpg" alt="Alfa Romeo" title="Alfa Romeo"></a>
+        </div>
+    </div>
+</section>
+
+<!-- Used Cars Section -->
+<section id="used-cars" class="hidden-section">
+    <h1>Used Car Models</h1>
+    <div class="model-grid">
+        <div class="model-box">
+            <a href="used-audi.html"><img src="audi_logo.jpg" alt="Audi" title="Audi"></a>
+        </div>
+        <div class="model-box">
+            <a href="used-bmw.html"><img src="bmw_logo.jpg" alt="BMW" title="BMW"></a>
+        </div>
+        <div class="model-box">
+            <a href="used-mercedes.html"><img src="benz_logo.jpg" alt="Mercedes" title="Mercedes"></a>
+        </div>
+        <div class="model-box">
+            <a href="used-toyota.html"><img src="toyota_logo.jpg" alt="Toyota" title="Toyota"></a>
+        </div>
+        <div class="model-box">
+            <a href="used-skoda.html"><img src="skoda_logo.jpg" alt="Skoda" title="Skoda"></a>
+        </div>
+        <div class="model-box">
+            <a href="used-alfa-romeo.html"><img src="alfa_romeo_logo.jpg" alt="Alfa Romeo" title="Alfa Romeo"></a>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Survey Popup -->
+<div id="survey-popup" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeSurvey()">&times;</span>
+        <h1>User Experience Survey</h1>
+        <form id="survey-form">
+            <label for="rating">Rate Your Experience:</label><br>
+            <input type="range" id="rating" min="1" max="100" required><br>
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" placeholder="Share your feedback..." rows="4" cols="36"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+<footer>
+    <p>© 2024 Car Shop. All rights reserved.</p>
+</footer>
+
+<script src="proekt1.js"></script>
+</body>
+</html>

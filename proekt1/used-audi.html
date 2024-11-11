@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Shop</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+<div class="full-screen-container">
+</div>
+
+<header>
+    <a href="proekt1.html"><img src="logo.png" alt="Car Shop Logo" class="logo"></a>
+    <nav>
+        <a href="#survey" onclick="openSurvey()">Feedback</a>
+    </nav>
+</header>
+
+<!-- Car Information -->
+
+<a href="https://www.audiusa.com/us/web/en/models/a8/a8-sedan/2024/overview.html" class="Audi A8" title="Audi A8"><h1>Audi A8</h1></a>
+<!-- Car Image Section -->
+<div id="car-images">
+    <div class="car-image-container">
+        <img src="audi_a8_main.jpg" alt="Audi A8" id="main-image" class="car-image"><br>
+        <div class="like-comment-container">
+            <button id="like-button-1" onclick="toggleLike(1)">Like</button>
+            <span id="like-count-1"></span>
+            <div class="comments-section">
+                <input type="text" id="comment-input-1" placeholder="Add a comment...">
+                <button onclick="addComment(1)">Comment</button>
+                <ul id="comments-list-1"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="car-image-container">
+        <img src="audi_a8_sec.jpg" alt="Audi A8 Secondary" class="car-image"><br>
+        <div class="like-comment-container">
+            <button id="like-button-2" onclick="toggleLike(2)">Like</button>
+            <span id="like-count-2"></span>
+            <div class="comments-section">
+                <input type="text" id="comment-input-2" placeholder="Add a comment...">
+                <button onclick="addComment(2)">Comment</button>
+                <ul id="comments-list-2"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<a href="https://www.audiusa.com/us/web/en/models/a8/a8-sedan/2024/overview.html" class="Audi A8" title="Review"><h1><strong>A review of the car model:<strong></h1></a>
+<section id="test-drive-form">
+    <h1>Schedule a Test Drive</h1>
+    <form>
+      <label for="date">Preferred Date:</label><br><br>
+      <input type="date" id="date" name="date" required><br><br>
+  
+      <button type="submit">Submit</button><br>
+    </form>
+  </section>
+
+
+<!-- Survey Popup -->
+<div id="survey-popup" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeSurvey()">&times;</span>
+        <h1>User Experience Survey</h1>
+        <form id="survey-form">
+            <label for="rating">Rate Your Experience:</label><br>
+            <input type="range" id="rating" min="1" max="100" required><br>
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" placeholder="Share your feedback..." rows="4" cols="36"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+<footer>
+    <p>© 2024 Car Shop. All rights reserved.</p>
+</footer>
+<script src="page.js"></script>
+</body>
+</html>
